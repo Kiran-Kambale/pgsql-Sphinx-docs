@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Sphinx-powered documentation for PostgreSQL DBA topics — built with Python, hosted as static HTML.
+
 <!--
 **kambalekiran9/kambalekiran9** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
