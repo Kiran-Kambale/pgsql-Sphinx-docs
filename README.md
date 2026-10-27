@@ -1,3 +1,4 @@
+![HTML](https://img.shields.io/badge/HTML-Documentation-orange?logo=html5&logoColor=white)
 # PostgreSQL DBA Documentation — Kiran Kambale
 
 A Sphinx-powered documentation library covering PostgreSQL administration,
