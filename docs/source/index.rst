@@ -1,92 +1,72 @@
+PostgreSQL DBA Documentation by Kiran Kambale
+============================================
 
-PostgreSQL Database Administration Tutorial - By Kiran Kambale
-=================================================================
+Welcome to the **PostgreSQL DBA Tutorial**, a practical documentation library
+maintained by **Kiran Kambale**. It brings together PostgreSQL administration,
+SQL, backup and recovery, upgrades, performance topics, and database incident
+investigation in one searchable place.
 
-Welcome to **Mastering PostgreSQL Database Administration**, a comprehensive tutorial created by **Kiran Kambale** — a passionate Database Administrator with over **3 years of professional experience** and a strong academic foundation, holding an **MBA in Information Technology (IT)**.
+The content is organized by task so that beginners can follow a learning path
+and experienced engineers can jump directly to a reference topic.
 
-This tutorial is crafted for those who aspire to become **expert PostgreSQL DBAs**. It blends theoretical knowledge with real-world practices, providing you with the skills, confidence, and strategies needed to manage mission-critical PostgreSQL environments.
+How to use this documentation
+-----------------------------
 
-What You Will Learn
-====================
+* **New to PostgreSQL?** Start with the PostgreSQL reference and SQL sections.
+* **Preparing for DBA work?** Review administration, upgrades, backup/recovery,
+  performance, and troubleshooting topics.
+* **Investigating a real issue?** Read the DB Incident Replay guide and use its
+  evidence-based investigation checklist.
+* **Looking for a specific command or concept?** Use the search box or index.
 
-- Professional Installation and Setup of PostgreSQL
-- Advanced Configuration and Tuning Techniques
-- User Management, Access Control, and Database Security
-- Backup, Recovery, and Disaster Recovery Planning
-- Query Optimization and Performance Enhancement
-- Replication, High Availability, and Failover Management
-- Monitoring Tools and Proactive Troubleshooting
-- Industry Best Practices for Managing PostgreSQL in Production
+.. tip::
 
-Each module combines detailed explanations, best practices, and field-tested tips to ensure you not only learn but master PostgreSQL administration.
+   For production work, verify commands and settings against your PostgreSQL
+   major version and environment. Always test potentially disruptive changes
+   before applying them to production.
 
-About the Author
-================
-
-**Kiran Kambale**
-
-- **Experience**: 3+ years managing complex PostgreSQL and other database systems
-- **Education**: Master of Business Administration (MBA) in Information Technology (IT)
-- **Mission**: To simplify complex database topics and empower learners to become confident, industry-ready DBAs.
-
-Start Your Journey
-===================
-
-Whether you're preparing for your first DBA role, strengthening your existing skills, or aiming to certify your PostgreSQL knowledge, this guide is your gateway to success.
-
-Let’s begin!
-
-Contents
-========
+Documentation library
+---------------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: PostgreSQL DBA Tutorial
+   :caption: Start here
 
-   introduction
-   installation
-   configuration
-   user_management
-   backup_recovery
-   performance_tuning
-   replication_high_availability
-   monitoring_troubleshooting
-   production_best_practices
-   faqs
-
+   db_incident_replay
 
 .. toctree::
    :maxdepth: 2
-   :caption: Index
+   :caption: PostgreSQL administration and operations
 
+   postgresql
+   postgresql_upgrade_guide
+   pgBackRest_Document
+
+.. toctree::
+   :maxdepth: 2
+   :caption: SQL and database fundamentals
+
+   sql
    index2
 
 .. toctree::
    :maxdepth: 2
-   :caption: PostgreSQL
-
-   postgresql
-
-.. toctree::
-   :maxdepth: 2
-   :caption: SQL Language
-
-   sql
-
-.. toctree::
-   :maxdepth: 2
-   :caption: MongoDB
+   :caption: Other database platforms
 
    mongodb
 
-.. toctree::
-   :maxdepth: 2
-   :caption: PostgreSQL Upgrade Guide
+About the author
+----------------
 
-   postgresql_upgrade_guide
+**Kiran Kambale** is a PostgreSQL database professional focused on production
+database support, troubleshooting, backup and recovery, performance, and
+operational reliability. This documentation is intended to make practical
+knowledge easier to find, learn, and apply.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: pgBackRest Documentation
+Contributions and source
+------------------------
 
-   pgbackrest_document
+The documentation source is maintained in the
+`pgsql-Sphinx-docs GitHub repository <https://github.com/Kiran-Kambale/pgsql-Sphinx-docs>`_.
+Corrections and improvements should be made in the source files and then
+published through the configured Read the Docs build.
