@@ -1,18 +1,31 @@
-### Hi there 👋
+# PostgreSQL DBA Documentation — Kiran Kambale
 
-Sphinx-powered documentation for PostgreSQL DBA topics — built with Python, hosted as static HTML.
+A Sphinx-powered documentation library covering PostgreSQL administration,
+SQL, upgrades, backup/recovery, and practical database incident investigation.
 
-<!--
-**kambalekiran9/kambalekiran9** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- **Hosted documentation:** https://pgsql-sphinx-docs.readthedocs.io/en/latest/
+- **DB Incident Replay topic:** https://pgsql-sphinx-docs.readthedocs.io/en/latest/db_incident_replay.html
+- **Source repository:** https://github.com/Kiran-Kambale/pgsql-Sphinx-docs
 
-Here are some ideas to get you started:
+## Build locally
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ... .
--->
+From the repository root:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r docs/requirements.txt
+sphinx-build -b html docs/source docs/build/html
+```
+
+Open `docs/build/html/index.html` to review the generated documentation.
+
+## Publishing updates
+
+Commit and push the updated source files to the GitHub repository connected to
+Read the Docs. After the build completes successfully, the hosted site will
+publish the new `db_incident_replay.html` page and the revised navigation.
+
+The page documents the evidence-analysis workflow and clearly distinguishes
+current scope from capabilities that require additional implementation or
+configuration. Always verify product behavior for the specific release.
